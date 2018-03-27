@@ -1,9 +1,34 @@
 body {
-  background-color: slategray;
+  background-color: whitesmoke;
 }
 
+/* Zoo Wrapper */
+#zoo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Zoo Wrapper */
+
 /* Animal Card Styling */
-.animal-card {
-  border: 1px solid red;
+.animal {
+  border: 3px solid black;
+  width: 28%;
+  margin: 10px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.animal h1 {
+  padding: 0px 10px 0px 10px;
+}
+
+.animal img {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.btn-escape {
+  margin: 10px 10px;
 }
 /* End Animal Card Styling */

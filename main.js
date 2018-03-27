@@ -12,11 +12,11 @@ const buildDomString = (inputArray) => {
   output = "";
   for (let i = 0; i < inputArray.length; i++) {
     output += `
-              <div class="animal-card">
+              <div class="animal">
                 <h1>${inputArray[i].name}</h1>
                 <h3>${inputArray[i].number}</h3>
-                <img src="${inputArray[i].imageURL}">
-                <div>
+                <img class = "animal-image"src="${inputArray[i].imageURL}">
+                <div class="button-container">
                   <button class="btn-escape">Escaped!</button>
                 </div>
               </div>
