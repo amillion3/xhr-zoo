@@ -11,8 +11,12 @@ const printToDom = (domString, divId) => {
 const buildDomString = (inputArray) => {
   output = "";
   for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i].isCarnivore) {
+      output += `<div class="animal carnivore">`;
+    } else {
+      output += `<div class="animal vegetable">`;
+    }
     output += `
-              <div class="animal">
                 <h1>${inputArray[i].name}</h1>
                 <h3>${inputArray[i].number}</h3>
                 <img class = "animal-image"src="${inputArray[i].imageURL}">
