@@ -1,0 +1,109 @@
+{
+  "animals": [
+    {
+      "name": "Panamanian Golden Frog",
+      "type": "Amphibian",
+      "number": 12,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_golden-frog-katie-gregory.jpg"
+    },
+    {
+      "name": "African Clawed Frog",
+      "type": "Amphibian",
+      "number": 24,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_african-clawed-frog-web.jpg"
+    },
+    {
+      "name": "Hellbender",
+      "type": "Amphibian",
+      "number": 36,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_hellbender-sm.jpg"
+    },
+    {
+      "name": "Andean Goose",
+      "type": "Bird",
+      "number": 2,
+      "isCarnivore": false,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_andean-geese-web.jpg"
+    },
+    {
+      "name": "Common Barn Owl",
+      "type": "Bird",
+      "number": 34,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_barnowl1-sq.jpg"
+    },
+    {
+      "name": "Snowy Owl",
+      "type": "Bird",
+      "number": 100,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_snowyowl1.jpg"
+    },
+    {
+      "name": "Bluehead Wrasse",
+      "type": "Fish",
+      "number": 55,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_bluehead-wrasse-web.jpg"
+    },
+    {
+      "name": "Lionfish",
+      "type": "Fish",
+      "number": 44,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_lionfish1.jpg"
+    },
+    {
+      "name": "Red-tail Triggerfish",
+      "type": "Fish",
+      "number": 898,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_6-30-14_red-tailed_triggerfish_-_amiee_stubbs.jpg"
+    },
+    {
+      "name": "Mexican Spider Monkey",
+      "type": "Mammal",
+      "number": 13,
+      "isCarnivore": false,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_spider-monkey---2017---amiee-stubbs-28-web.jpg"
+    },
+    {
+      "name": "Ring-tailed Lemur",
+      "type": "Mammal",
+      "number": 66,
+      "isCarnivore": false,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_ringtailedlemur1.jpg"
+    },
+    {
+      "name": "White-cheeked Gibbon",
+      "type": "Mammal",
+      "number": 23,
+      "isCarnivore": false,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_whitecheekedgibbon3.jpg"
+    },
+    {
+      "name": "Dwarf Caiman",
+      "type": "Reptile",
+      "number": 1,
+      "isCarnivore": true,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_dwarf_caiman_-_sperka.jpg"
+    },
+    {
+      "name": "Galapagos Tortoise",
+      "type": "Reptile",
+      "number": 9,
+      "isCarnivore": false,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/tortoise6.jpg"
+    },
+    {
+      "name": "Rhinoceros Iguana",
+      "type": "Reptile",
+      "number": 10000,
+      "isCarnivore": false,
+      "imageURL": "https://www.nashvillezoo.org/assets/2147/12_rhino_iguana.jpg"
+    }
+  ]
+}
