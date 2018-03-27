@@ -11,7 +11,16 @@ const printToDom = (domString, divId) => {
 const buildDomString = (inputArray) => {
   output = "";
   for (let i = 0; i < inputArray.length; i++) {
-    output += `<h2>${inputArray[i].name}</h2>`;
+    output += `
+              <div class="animal-card">
+                <h1>${inputArray[i].name}</h1>
+                <h3>${inputArray[i].number}</h3>
+                <img src="${inputArray[i].imageURL}">
+                <div>
+                  <button class="btn-escape">Escaped!</button>
+                </div>
+              </div>
+    `;
   }
   printToDom(output, "zoo-wrapper");
 };
