@@ -30,11 +30,34 @@ const addEscapedEventListeners = () => {
   }
   //animalEscaped();
 };
-
-const animalEscaped = () => {
-
+/*
+Write showFoundButton function that gets called in the animalEscaped function and takes an input of the dom element for the card of the animal who escaped
+showFoundButton function should add the found button to the dom element passed in and then call the initalizeFoundButton function.
+write initalizeFoundButton function that adds an event listener to the found button. When the button is clicked the escape buttons should all be added back to each animal, the escape button event listeners should be added, all background colors should be removed from cards
+*/
+const animalEscaped = (e) => {
+  const badAnimalButtonContainer = e.target.parentNode;
   showCarnivores();
   showVegetables();
+  showFoundButton(badAnimalButtonContainer);
+};
+
+const showFoundButton = (buttonContainer) => {
+  buttonContainer.innerHTML = `<button id="found">Found</button>`;
+  initializeFoundButton();
+};
+
+const initializeFoundButton = () => {
+  const foundButton = document.getElementById("found");
+  foundButton.addEventListener('click', () => {
+    const animals = document.getElementsByClassName("animal");
+    for (var i = 0; i < animals.length; i++) {
+      animals[i].classList.remove('green');
+      animals[i].classList.remove('red');
+      animals[i].children[3].innerHTML = `<button class="escaped">Escaped!</button>`;
+    }
+    addEscapedEventListeners();
+  });
 };
 
 const showCarnivores = () => {
