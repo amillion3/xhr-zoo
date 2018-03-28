@@ -30,11 +30,13 @@ const addEscapedEventListeners = () => {
   }
   //animalEscaped();
 };
+
 /*
-Write showFoundButton function that gets called in the animalEscaped function and takes an input of the dom element for the card of the animal who escaped
-showFoundButton function should add the found button to the dom element passed in and then call the initalizeFoundButton function.
-write initalizeFoundButton function that adds an event listener to the found button. When the button is clicked the escape buttons should all be added back to each animal, the escape button event listeners should be added, all background colors should be removed from cards
+In the showVegetables function make a call to the initializeEatmeButtons function
+Create a initializeEatmeButtons function. it should add event listeners to the Eat Me buttons that connect to a function called itsAlreadyBeenEaten
+Create a itsAlreadyBeenEaten function this function should decrease the number of the vegetable clicked on by 1 every time the button is clicked on
 */
+
 const animalEscaped = (e) => {
   const badAnimalButtonContainer = e.target.parentNode;
   showCarnivores();
@@ -71,11 +73,25 @@ const showCarnivores = () => {
 const showVegetables = () => {
   const vegetable = document.getElementsByClassName("vegetable");
   for (let i = 0; i < vegetable.length; i++) {
-    vegetable[i].children[3].innerHTML = `<button class="eatMe">EAT ME!</button>`;
+    vegetable[i].children[3].innerHTML = `<button class="eat-me">EAT ME!</button>`;
     vegetable[i].classList.add('green'); //turns vegetables' background color green
+  }
+  initializeEatmeButtons();
+};
+
+const initializeEatmeButtons = () => {
+  const eatMeButtons = document.getElementsByClassName("eat-me");
+  for (let i = 0; i < eatMeButtons.length; i++) {
+    eatMeButtons[i].addEventListener('click', itsAlreadyBeenEaten);
   }
 };
 
+const itsAlreadyBeenEaten = (e) => {
+  const currentNumber = e.target.parentNode.parentNode.children[1].innerHTML;
+  const newNumber = (currentNumber * 1) - 1;  //reduce animal count by 1
+  e.target.parentNode.parentNode.children[1].innerHTML = newNumber;
+
+};
 
 // XHR Below
 //CANNOT BE ES6 OR A FAT ARROW FUNCTION. ES6 allowed inside function.
