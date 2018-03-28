@@ -31,4 +31,18 @@ body {
 .btn-escape {
   margin: 10px 10px;
 }
+
+.eatMe {
+  margin: 10px 10px;
+}
 /* End Animal Card Styling */
+
+/* Change background colors on click */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+/* Change background colors on click */
